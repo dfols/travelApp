@@ -1,12 +1,12 @@
- import Reacts from "react"
- import Result from "./Result"
-
+import Searchbar from "./components/Searchbar"
 
 function App() {
-
   return (
     <>
-     <Result/>
+      <div className="App">
+        <Searchbar />
+      </div>
+
     </>
   )
 }
