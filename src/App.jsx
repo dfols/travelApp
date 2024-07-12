@@ -14,6 +14,8 @@ function App() {
           </div>
         </div>
       </div>
+
+      <Axios-Test />
     </>
   )
 }
