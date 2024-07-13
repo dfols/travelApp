@@ -1,7 +1,9 @@
 import React from "react";
 
 
-function Result() {
+function Result({name, description, address, types, photoReference}) {
+
+    console.log({name, description, address, types, photoReference});
         return(
 
 <>
