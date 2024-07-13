@@ -1,5 +1,7 @@
-function App() {
+import axios from "axios";
+import { getCustomersData } from "./getCustomersData.js";
 
+function App() {
   return (
     <>
       <div className="hero bg-base-200 min-h-screen">
@@ -7,17 +9,18 @@ function App() {
           <div className="max-w-md">
             <h1 className="text-5xl font-bold">Travel App</h1>
             <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-              quasi. In deleniti eaque aut repudiandae et a id nisi.
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <button onClick={getCustomersData} className="btn btn-primary">
+              Get Started
+            </button>
           </div>
         </div>
       </div>
-
-      <Axios-Test />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
