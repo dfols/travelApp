@@ -8,6 +8,7 @@ document.getElementById('search-button').addEventListener('click', function() {
 });
 
 function geocode(query) {
+    
     var apiKey = 'AIzaSyBMBhOhkCQTNAIIntag10-_wqX-Ym08e1s';
     var url = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(query)}&key=${apiKey}`;
                 
@@ -27,13 +28,13 @@ function geocode(query) {
         });
 }
 
-function displayResults(results) {
-    var resultsContainer = document.getElementById('results');
-    resultsContainer.innerHTML = '';
+// function displayResults(results) {
+//     var resultsContainer = document.getElementById('results');
+//     resultsContainer.innerHTML = '';
 
-    results.forEach(result => {
-        var p = document.createElement('p');
-        p.textContent = result.formatted_address;
-        resultsContainer.appendChild(p);
-    });
-}
+//     results.forEach(result => {
+//         var p = document.createElement('p');
+//         p.textContent = result.formatted_address;
+//         resultsContainer.appendChild(p);
+//     });
+// }
