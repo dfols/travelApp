@@ -1,7 +1,15 @@
 import axios from "axios";
 import { getCustomersData } from "./getCustomersData.js";
 
+
 function App() {
+
+
+
+
+
+
+
   return (
     <>
       <div className="hero bg-base-200 min-h-screen">
@@ -16,6 +24,7 @@ function App() {
             <button onClick={getCustomersData} className="btn btn-primary">
               Get Started
             </button>
+
           </div>
         </div>
       </div>

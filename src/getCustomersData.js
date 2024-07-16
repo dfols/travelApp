@@ -1,15 +1,18 @@
 import axios from "axios";
-// import { useState } from "react";
+import { useState } from "react";
 
-// export const [customerData, setCustomersData] = useState();
+
+const [customerData, setCustomersData] = useState();
 
 export const getCustomersData = () => {
   axios
-    .get("https://baconipsum.com/api/?type=all-meat&paras=2&start-with-lorem=1")
+    .get(`https://baconipsum.com/api/?type=all-meat&paras=2&start-with-lorem`)
     .then((data) => console.log(data.data))
     .then((data) => setCustomersData(data))
     .catch((error) => console.log(error));
 };
+
+
 
 // export const setCustomerData = ({ id, value }) => {
 //   axios
