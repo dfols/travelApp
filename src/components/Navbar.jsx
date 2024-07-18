@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-300">
             <div className="navbar-start">
                 <Link to="/" className="btn btn-ghost text-xl">RoamRadar</Link>
             </div>
