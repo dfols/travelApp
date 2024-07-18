@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-function Navbar() {
+function NavbarFavorite() {
 
     return (
         <div className="navbar bg-base-100">
@@ -8,10 +8,10 @@ function Navbar() {
             </div>
 
             <div className="navbar-end">
-                <Link to="/favorites" className="btn btn-primary">Favorites</Link>
+                <Link to="/search" className="btn btn-primary">Search</Link>
             </div>
         </div>
     )
 }
 
-export default Navbar;
+export default NavbarFavorite;

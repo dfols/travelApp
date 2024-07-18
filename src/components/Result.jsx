@@ -1,4 +1,10 @@
-function Result({ name, types, photoReference, handleFavorite }) {
+function Result({ name, types, photoReference }) {
+
+  const handleFavorite = () => {
+    const favoriteItem = { name, types, photoReference };
+    const existingFavorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    localStorage.setItem("favorites", JSON.stringify([...existingFavorites, favoriteItem]));
+  };
 
   return (
     <>
