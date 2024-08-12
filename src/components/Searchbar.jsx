@@ -17,7 +17,7 @@ function SearchBar({ onSearch }) {
                 className="input input-bordered w-full max-w-xs"
                 value={searchTerm}
                 onChange={handleInputChange} />
-            <button onClick={handleSearch} className="btn btn-primary mx-4">Search</button>
+            <button onClick={handleSearch} className="btn btn-primary ml-8">Search</button>
         </div>
     )
 }
